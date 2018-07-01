@@ -72,7 +72,7 @@
                 var fri = document.createElement('td');
 
                 linha.textContent = "Total";
-                fi.textContent = "-";
+                fi.textContent = dados.length;
                 fai.textContent = dados.length;
                 fr.textContent = "-";
                 fri.textContent = "100%";
