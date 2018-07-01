@@ -74,8 +74,8 @@
                 linha.textContent = "Total";
                 fi.textContent = dados.length;
                 fai.textContent = "-";
-                fr.textContent = "-";
-                fri.textContent = "100%";
+                fr.textContent = "100%";
+                fri.textContent = "-";
 
                 tr.appendChild(linha);
                 tr.appendChild(fi);
