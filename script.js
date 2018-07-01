@@ -73,7 +73,7 @@
 
                 linha.textContent = "Total";
                 fi.textContent = dados.length;
-                fai.textContent = dados.length;
+                fai.textContent = "-";
                 fr.textContent = "-";
                 fri.textContent = "100%";
 
