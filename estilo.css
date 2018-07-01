@@ -1,0 +1,30 @@
+.mdl-textfield__input{
+            background-color: lightblue;
+            
+        }
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        table {
+                width: 100%;
+            }
+
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        #TABELA{
+            display: none;
+        }
+        .btt{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
