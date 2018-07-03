@@ -25,7 +25,7 @@
         </header>
         <main class="mdl-layout__content">
             <!-- CONTEUDO -->
-            <span><b>Preencher todos os campos do formulario!</b> Coloque os dados separados por ";" com espaços antes e depois. Em caso de numeros com "," utilize "." no lugar.</span>
+            <span><b>Apenas o campo "Fonte" não necessita ser preenchido!</b> Coloque os dados separados por ";" com espaços antes e depois. Em caso de numeros com "," utilize "." no lugar.</span>
             <br>
             <div class="form">
                 <form action="#">
@@ -42,6 +42,11 @@
                         <div class="mdl-textfield mdl-js-textfield">
                                 <input class="mdl-textfield__input" type="text" id="dados">
                                 <label class="mdl-textfield__label" for="sample1">Dados</label>
+                        </div>
+                        <br>
+                        <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="fonte">
+                                <label class="mdl-textfield__label" for="sample1">Fonte</label>
                         </div>
                 </form> 
     
@@ -70,6 +75,7 @@
                         <th>Frequência Relativa Acumulada (FAr)</th>
                     </tr>
                 </table>
+                <h5 id="fontetable"></h5>
             </div>
         </main>
         <footer class="mdl-mini-footer">

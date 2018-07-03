@@ -6,9 +6,15 @@
             if(document.querySelector("#nomeTabela").value != "" && document.querySelector("#nomeDado").value != "" && document.querySelector("#dados").value != ""){
                 //pegar dados dos inputs
                 document.querySelector("#nometable").innerHTML = document.querySelector("#nomeTabela").value
+
+                if(document.querySelector("#fonte").value != ""){ document.querySelector("#fontetable").innerHTML = "Fonte: " + document.querySelector("#fonte").value;
+                }else{document.querySelector("#fontetable").innerHTML = "Fonte: Fonte Desconhecida";
+                }
+
                 document.querySelector("#nome").innerHTML = document.querySelector("#nomeDado").value
 
                 dados = document.querySelector("#dados").value.split(" ; ");
+
                 //organizar dados
                 dados.sort(function(a, b){return a-b});
 
@@ -87,7 +93,7 @@
                 document.querySelector("#enviar").disabled = true;
                 document.querySelector("#excluir").disabled = false;
                 document.querySelector('#TABELA').style.display = "inline";
-            }
+            }else{ alert("Preencha os campos necessários!"); }
         }
         function excluirTabela(){
             var elementos = document.querySelector('#tabela').childNodes;
@@ -99,6 +105,8 @@
             document.querySelector("#excluir").disabled = true;
             document.querySelector('#TABELA').style.display = "none";
             document.querySelector('#nometable').innerHTML = "";
+            document.querySelector('#fontetable').innerHTML = "";
+
         }
         console.log("Caso de teste");
         console.log("Alturas dos alunos da turma");
